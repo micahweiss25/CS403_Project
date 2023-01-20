@@ -320,3 +320,18 @@ WARNING: Unmatched cancel notification for request id 7531
 2023.01.19 00:20:29 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
 2023.01.20 12:58:05 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\.metals\lsp.trace.json or C:\Users\Micah.Weiss\AppData\Local\scalameta\metals\cache\lsp.trace.json
 2023.01.20 12:58:06 INFO  logging to file C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\.metals\metals.log
+2023.01.20 12:58:06 INFO  Started: Metals version 0.11.10 in workspace 'C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project' for client Visual Studio Code 1.74.3.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Micah.Weiss/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.10.5/scribe-slf4j_2.13-3.10.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.01.20 12:58:11 INFO  time: initialize in 5.49s
+2023.01.20 12:58:12 WARN  Build server is not auto-connectable.
+2023.01.20 12:58:12 WARN  no build tool detected in workspace 'C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.01.20 12:58:12 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.20 12:58:15 INFO  no build target found for C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.2.1
+2023.01.20 12:58:16 INFO  time: code lens generation in 3.4s
+Jan 20, 2023 2:03:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7

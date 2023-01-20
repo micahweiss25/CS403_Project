@@ -1,4 +1,31 @@
+import util.Random
+
 @main def hello: Unit = 
+// Define data types
+  case class Continent(id: Int, states: Array[State], bonus: Int)
+  case class State(continent: Int, occupier: Option[Int], troops: Int)
+  case class Player(id: Int, hand: List[Card], states: List[State], points: Int) 
+  case class Card(suit: String, rank: String) {
+    def isSameRank(other: Card): Boolean = this.rank == other.rank
+    def isSameSuit(other: Card): Boolean = this.suit == other.suit
+  }
+  var NAStates = Array.fill(9)(State(1, None, 0))
+  var NorthAmerica = Continent(id = 1, states = NAStates, 5)
+  // Create deck
+  // I create the deck by giving ChatGPT the following prompt:
+  // write a new data type in scala to store attributes of a card from a 52 card deck
+  val suits = List("hearts", "diamonds", "clubs", "spades")
+  val ranks = List("2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A")
+  val deck = suits.flatMap(suit => ranks.map(rank => Card(suit, rank)))
+  val shuffledDeck = Random.shuffle(deck)
+
+  // Divde map
+
+
+
+
+
+
   var gameBoard = "\n"
     .concat("                      RISK: Micah Weiss                  \n")
     .concat("                                                         \n")
@@ -38,42 +65,3 @@
   println(gameBoard)
 
 
-
-
-
-  /*
-
-  "  ____________________________________        ___________________________   \n" 
-    "  |        |      1      |      1     |       |    3   |        |        |  \n" +
-    "  |        |             |            |-------|2(2,4,5)|    3   |        |  \n" +
-    "--|    1   |_____________|____________|       |________|2(2,4,5)|        |--\n" +
-    "  |1(1,0,0)|    1   |    1   |    1   |       |    3   |________|        |  \n" +
-    "  |        |1(1,0,0)|2(2,4,5)|2(2,4,5)|       |2(2,4,5)|    3   |    3   |  \n" +
-    "  |________|________|________|________|       |________|2(2,4,5)|2(2,4,5)|  \n" +
-    "           |      1      |      1     |       |        |________|        |  \n" +
-    "           |             |            |       |    3   |    3   |        |  \n" +
-    "           |_____________|____________|       |2(2,4,5)|2(2,4,5)|        |  \n" +
-    "           |             1            |       |________|________|________|  \n" +
-    "           |                          |                     |               \n" +
-    "           |__________________________|                     |               \n" +
-    "                         |                    ______________|______         \n" +
-    "                         |                    |    4   |     4     |        \n" +
-    "                _________|________            |2(2,4,5)|  2(2,4,5) |        \n" +
-    "                |        2        |           |        |___________|        \n" +
-    "                |    2(2,4,5)     |           |________|           |        \n" +
-    "                |_________________|           |    4   |     4     |        \n" +
-    "                |    2   |    2   |-----------|        |           |        \n" +
-    "                |2(2,4,5)|2(2,4,5)|           |________|___________|        \n" +
-    "                |________|________|           |     4    |    4    |        \n" +
-    "                |        2        |           |          |         |        \n" +
-    "                |    2(2,4,5)     |           |__________|_________|        \n" +
-    "                |_________________|                                         \n" +
-    "                                                                            \n" +
-    "                                                                            \n" +
-    "                                                                            \n" +
-    "                                                                            \n" +
-    "                                                                            \n" +
-    "                                                                            \n" +
-    "                                                                            \n" +
-    "                                                                            \n" +
-*/
