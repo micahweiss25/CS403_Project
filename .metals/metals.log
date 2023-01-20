@@ -1,0 +1,322 @@
+2023.01.13 10:57:45 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Micah.Weiss\Desktop\CS403 Project\.metals\lsp.trace.json or C:\Users\Micah.Weiss\AppData\Local\scalameta\metals\cache\lsp.trace.json
+Jan 13, 2023 10:57:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.net.URI.create(URI.java:883)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.net.URI$Parser.fail(URI.java:2913)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3084)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3166)
+	at java.base/java.net.URI$Parser.parse(URI.java:3114)
+	at java.base/java.net.URI.<init>(URI.java:600)
+	at java.base/java.net.URI.create(URI.java:881)
+	... 10 more
+
+2023.01.13 10:57:49 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Micah.Weiss\Desktop\CS403 Project\.metals\lsp.trace.json or C:\Users\Micah.Weiss\AppData\Local\scalameta\metals\cache\lsp.trace.json
+Jan 13, 2023 10:57:50 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.net.URI.create(URI.java:883)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.net.URI$Parser.fail(URI.java:2913)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3084)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3166)
+	at java.base/java.net.URI$Parser.parse(URI.java:3114)
+	at java.base/java.net.URI.<init>(URI.java:600)
+	at java.base/java.net.URI.create(URI.java:881)
+	... 10 more
+
+2023.01.13 10:57:53 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Micah.Weiss\Desktop\CS403 Project\.metals\lsp.trace.json or C:\Users\Micah.Weiss\AppData\Local\scalameta\metals\cache\lsp.trace.json
+Jan 13, 2023 10:57:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.net.URI.create(URI.java:883)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.net.URI$Parser.fail(URI.java:2913)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3084)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3166)
+	at java.base/java.net.URI$Parser.parse(URI.java:3114)
+	at java.base/java.net.URI.<init>(URI.java:600)
+	at java.base/java.net.URI.create(URI.java:881)
+	... 10 more
+
+2023.01.13 10:57:57 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Micah.Weiss\Desktop\CS403 Project\.metals\lsp.trace.json or C:\Users\Micah.Weiss\AppData\Local\scalameta\metals\cache\lsp.trace.json
+Jan 13, 2023 10:57:58 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.net.URI.create(URI.java:883)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.net.URI$Parser.fail(URI.java:2913)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3084)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3166)
+	at java.base/java.net.URI$Parser.parse(URI.java:3114)
+	at java.base/java.net.URI.<init>(URI.java:600)
+	at java.base/java.net.URI.create(URI.java:881)
+	... 10 more
+
+2023.01.13 10:58:01 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Micah.Weiss\Desktop\CS403 Project\.metals\lsp.trace.json or C:\Users\Micah.Weiss\AppData\Local\scalameta\metals\cache\lsp.trace.json
+Jan 13, 2023 10:58:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.net.URI.create(URI.java:883)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 42: file:///c:/Users/Micah.Weiss/Desktop/CS403 Project
+	at java.base/java.net.URI$Parser.fail(URI.java:2913)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3084)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3166)
+	at java.base/java.net.URI$Parser.parse(URI.java:3114)
+	at java.base/java.net.URI.<init>(URI.java:600)
+	at java.base/java.net.URI.create(URI.java:881)
+	... 10 more
+
+2023.01.13 10:59:51 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Micah.Weiss\Desktop\CS403_Project\.metals\lsp.trace.json or C:\Users\Micah.Weiss\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2023.01.13 10:59:52 INFO  logging to file C:\Users\Micah.Weiss\Desktop\CS403_Project\.metals\metals.log
+2023.01.13 10:59:52 INFO  Started: Metals version 0.11.10 in workspace 'C:\Users\Micah.Weiss\Desktop\CS403_Project' for client Visual Studio Code 1.74.3.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Micah.Weiss/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.10.5/scribe-slf4j_2.13-3.10.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.01.13 10:59:54 INFO  time: initialize in 1.83s
+2023.01.13 10:59:56 WARN  Build server is not auto-connectable.
+2023.01.13 10:59:56 WARN  no build tool detected in workspace 'C:\Users\Micah.Weiss\Desktop\CS403_Project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.01.13 11:01:14 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403_Project\my-project\build.sbt
+2023.01.13 11:01:20 INFO  no build target found for C:\Users\Micah.Weiss\Desktop\CS403_Project\my-project\build.sbt. Using presentation compiler with project's scala-library version: 3.2.1
+2023.01.13 11:01:21 INFO  time: code lens generation in 1.22s
+2023.01.13 11:01:27 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403_Project\my-project\build.sbt
+2023.01.13 11:03:08 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.13 11:03:13 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.13 11:03:22 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403_Project\my-project\src\main\scala\Main.scala
+Jan 13, 2023 11:03:22 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\Micah.Weiss\Desktop\CS403_Project\my-project\src\main\scala\Main.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\Micah.Weiss\Desktop\CS403_Project\my-project\src\main\scala\Main.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:743)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:731)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2112)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\Micah.Weiss\Desktop\CS403_Project\my-project\src\main\scala\Main.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:400)
+	at scala.meta.internal.metals.MetalsLanguageServer.executeCommand(MetalsLanguageServer.scala:2012)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.01.13 11:04:53 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403_Project\my-project\build.sbt
+2023.01.13 11:06:22 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403_Project\my-project\build.sbt
+2023.01.13 11:08:18 INFO  shutting down Metals
+2023.01.14 13:26:04 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Micah.Weiss\Desktop\CS403_Project\.metals\lsp.trace.json or C:\Users\Micah.Weiss\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2023.01.14 13:26:05 INFO  logging to file C:\Users\Micah.Weiss\Desktop\CS403_Project\.metals\metals.log
+2023.01.14 13:26:05 INFO  Started: Metals version 0.11.10 in workspace 'C:\Users\Micah.Weiss\Desktop\CS403_Project' for client Visual Studio Code 1.74.3.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Micah.Weiss/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.10.5/scribe-slf4j_2.13-3.10.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.01.14 13:26:07 INFO  time: initialize in 1.86s
+2023.01.14 13:26:08 WARN  Build server is not auto-connectable.
+2023.01.14 13:26:08 WARN  no build tool detected in workspace 'C:\Users\Micah.Weiss\Desktop\CS403_Project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.01.14 13:26:08 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403_Project\my-project\build.sbt
+2023.01.14 13:26:08 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.14 13:26:11 INFO  no build target found for C:\Users\Micah.Weiss\Desktop\CS403_Project\my-project\build.sbt. Using presentation compiler with project's scala-library version: 3.2.1
+2023.01.14 13:26:12 INFO  time: code lens generation in 3.79s
+2023.01.14 13:35:22 INFO  shutting down Metals
+2023.01.18 22:24:35 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\.metals\lsp.trace.json or C:\Users\Micah.Weiss\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2023.01.18 22:24:36 INFO  logging to file C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\.metals\metals.log
+2023.01.18 22:24:36 INFO  Started: Metals version 0.11.10 in workspace 'C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project' for client Visual Studio Code 1.74.3.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Micah.Weiss/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.10.5/scribe-slf4j_2.13-3.10.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.01.18 22:24:37 INFO  time: initialize in 1.43s
+2023.01.18 22:24:38 WARN  Build server is not auto-connectable.
+2023.01.18 22:24:38 WARN  no build tool detected in workspace 'C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.01.18 22:24:38 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.18 22:24:40 INFO  no build target found for C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.2.1
+Jan 18, 2023 10:24:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2023.01.18 22:24:42 INFO  time: code lens generation in 1.25s
+Jan 18, 2023 10:33:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 776
+Jan 18, 2023 10:40:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1346
+Jan 18, 2023 11:00:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jan 18, 2023 11:00:22 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jan 18, 2023 11:00:24 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jan 18, 2023 11:00:25 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.01.18 23:05:58 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.18 23:06:02 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.18 23:06:12 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\build.sbt
+2023.01.18 23:12:29 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.18 23:13:26 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.18 23:15:15 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.18 23:24:41 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.18 23:25:31 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+Jan 18, 2023 11:42:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5301
+Jan 18, 2023 11:45:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5394
+Jan 18, 2023 11:45:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5433
+2023.01.18 23:57:32 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+Jan 19, 2023 12:01:53 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6471
+Jan 19, 2023 12:11:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7257
+2023.01.19 00:14:30 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+Jan 19, 2023 12:15:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7531
+2023.01.19 00:16:22 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.19 00:16:46 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.19 00:19:59 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.19 00:20:18 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.19 00:20:29 WARN  no build target for: C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\my-project\src\main\scala\Main.scala
+2023.01.20 12:58:05 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\.metals\lsp.trace.json or C:\Users\Micah.Weiss\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2023.01.20 12:58:06 INFO  logging to file C:\Users\Micah.Weiss\Desktop\CS403\CS403_Project\.metals\metals.log
