@@ -18,16 +18,24 @@ import javax.imageio.plugins.tiff.ExifGPSTagSet
   case class Continent(id: Int, states: Array[State], bonus: Int, occupier: Occupier)
   case class State(continent: Int, occupier: Occupier, troops: Troop) 
   case class Player(id: Int, hand: List[Card], states: List[State], score: Int) {
-    def displayDeck: Unit = 
+    def displayDeck: Unit =  
       var deck: Array[String] = Array.fill(6)("")
       for card_idx <- 0 to this.hand.length - 1 do
         //if card_idx == this.hand.length - 1 then
-        for i <- this.hand(card_idx).makeCard do 
-          println(i)
+        var strArray = this.hand(card_idx).makeCard
+        for i <- 0 to strArray.length - 1 do 
+          deck(i) = deck(i).concat(strArray(i))
+      var lastCard = this.hand(this.hand.length - 1)
+      var rank = if lastCard.rank == 10.toString() then s" ${lastCard.rank}|" else s"  ${lastCard.rank}|" 
+      var suit = if lastCard.suit.length == 2 then s" ${lastCard.suit}|" else s"  ${lastCard.suit}|"
+      var cap: Array[String] = Array("____","   |", "   |", rank, suit,"___|")
+      for i <- 0 to 5 do 
+        deck(i) = deck(i).concat(cap(i))
+      for i <- deck do println(i)
 
 
 
-
+ 
 
         
   }
@@ -35,11 +43,14 @@ import javax.imageio.plugins.tiff.ExifGPSTagSet
     def isSameRank(other: Card): Boolean = this.rank == other.rank
     def isSameSuit(other: Card): Boolean = this.suit == other.suit
     def makeCard: Array[String] =
-      if this.suit == "<3" || this.suit == "<>" then return Array("____",s"|${this.rank}  ",s"|${this.suit} ","|   ","|   ","|___")
-      else return Array("____",s"|${this.rank}","|   ","|   ","|___")
+      var rank = if this.rank == 10.toString() then s"|${this.rank} " else s"|${this.rank}  " 
+      var suit = if this.suit.length == 2 then s"|${this.suit} " else s"|${this.suit}  "
+      Array("____",rank,suit,"|   ","|   ","|___") 
+      //if this.suit == "<3" || this.suit == "<>" then return Array("____",s"|${this.rank}  ",s"|${this.suit} ","|   ","|   ","|___")
+      //else return Array("____",s"|${this.rank}",s"|${this.suit} ","|   ","|   ","|___")
 
 
-
+ 
     /*
       var hand: Array[String] = Array("","","","","","")
       var template: Array[String] = Array("_","|","|","|","|","|")
@@ -75,7 +86,7 @@ import javax.imageio.plugins.tiff.ExifGPSTagSet
   // Create deck
   // I create the deck by giving ChatGPT the following prompt:
   // write a new data type in scala to store attributes of a card from a 52 card deck
-  val suits = List("<3", "<>", "& ", "^ ")
+  val suits = List("<3", "<>", "&", "^")    
   val ranks = List("2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A")
   val deck = suits.flatMap(suit => ranks.map(rank => Card(suit, rank)))
   var shuffledDeck = Random.shuffle(deck)
@@ -85,7 +96,6 @@ import javax.imageio.plugins.tiff.ExifGPSTagSet
     shuffledDeck = deck_hand._2
     players(i) = Player(i+1, deck_hand._1, List[State](), 0)
     
-  players(0).hand(0).makeCard
 
   players(0).displayDeck
 
@@ -122,7 +132,7 @@ import javax.imageio.plugins.tiff.ExifGPSTagSet
     .concat(s"  | ${Africa.occupier}:3 |                                                \n")
     .concat(s"  |_____|          _________________________             \n")
     .concat(s" Continents        |  1  |  2  |  3  |  4  |             \n")
-    .concat(s"                   |  ${players(0).score}  |  ${players(1).score}  |  ${players(2).score}  |  ${players(3).score}  |             \n")
+    .concat(s"                   |  ${players(0).score}  |  ${players(1).score}  |  ${players(2).score}  |  ${players(3).score}  |             \n") 
     .concat(s"                   |_____|_____|_____|_____|             \n")
     .concat(s"                         Player Scores                   \n")
     .concat(s"                                                         \n")
@@ -131,7 +141,7 @@ import javax.imageio.plugins.tiff.ExifGPSTagSet
 
   // create the starting conditions for the board
 
-
+ 
 
 
   /*
